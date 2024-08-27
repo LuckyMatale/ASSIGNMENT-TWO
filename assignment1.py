@@ -32,7 +32,7 @@ class StudentManagementSystem:
 
     def add_new_student(self, id, name, age, major):
         student = Student(id, name, age, major)  # Create a new student object
-        self.add_student(student)  # Add the student to the system
+        self.students.append(student)  # Add the student to the system
 
     def delete_student(self, student_id):
         self.remove_student(student_id)  # Remove the student from the system
